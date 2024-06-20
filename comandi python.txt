@@ -1,0 +1,12 @@
+socket.socket() -> Creazione della socket
+connect(tupla) -> Connessione al server, richiede una tupla contenente indirizzo IP 
+del server e porta
+send() -> Invio della richiesta al server
+recv() -> Ricezione della risposta dal server
+close() -> Chiude la socket
+socket.gethostname() -> Restituisce l'hostname della macchina da dove è eseguito il programma
+socket.gethostbyname() -> Restituisce l'IP associato al nome passato
+
+Ovvimamente quando creo la socket devo assicurarmi che la porta sia liberacbv
+
+

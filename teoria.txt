@@ -1,0 +1,30 @@
+Socket -> Astrazione software preogettata per l'uso di API per la trasmissione
+    e ricezione dei dati. In altre parole un canale di comunicazione asimmetrico (ne senso
+    che la trasmissione ad esempio può avvenire solo client -> server o la ricezione
+    solo server -> client), i processi possono essere sia sullo stesso computer sia che in computer differenti connessi attraverso
+    una rete.
+    Può essere descritta in parole molto semplici e spartane come l'accoppiata indirizzo IP - porta
+
+API -> Processo attraverso il quale due software si scambiano dati. Quando un'applicazione fa una chiamata API , inviaall'altra 
+    applicazione una richiesta specifica che viene ricevuta e processata da un'altra API.
+    In parole povere l'API è quello che può essere l'interprete tra due applicazioni che non sanno comunicare tra loro
+
+Porta -> "Un'etichetta" virtuale che permette di gestire il traffico dati di una connessione da quello di un'altra
+    Se l'indirizzo IP può essere inteso come l'indirizzo fisico di una edificio, le porte possono essere intese come diverse entrate,
+    ad esempio la porta del personale, la porta del publico, la porta sul retro ecc. Quindi usando un solo indirizzo ip possono essere
+    gestite più connessioni simultanemente.
+    Per esempio: Considero l'idirizzo ip "127.0.0.1" (che corrisponde all'indirizzo locale del computer. altresì detto localhost)
+    alla porta 8080 avvio il server mySQL, alla porta 5030 avvio il server XAMMP, alla porta 6040 avvio il server di un programma
+    di chat che ho scritto. Qundi alla fine ho tre connessioni diverse allo stesso indirizzo IP ma che sono isolate tra loro
+    Alcune porte sono usate di dafault dal computer altre sono libere, quindi accertarsi che quando si utilizzi una porta sia libera
+    Fun Fact: Nei computer odierni la porta è logica, ossia virtuale, una volta erano delle porte fisiche dove potevano essere 
+    collegati i cavi
+    
+UDP -> Protocollo di rete della suite dei protocolli di internet. Si occupa della trasmissione dei dati
+    Velocità: veloce
+    Funzionamento: Manda i pacchetti senza assicurasi che vengano ricevuti o meno (vedi https://it.wikipedia.org/wiki/Violenza_sessuale)
+
+TCP -> Protocollo di rete della suite dei protocolli di internet. Si occupa della trasmissione dei dati
+    Velocità: lento
+    Funzionamento: Stabilisce una connessione prima di inviare i dati e garantisce la corretta consegna dei pacchetti (vedi https://www.unobravo.com/post/consenso-sessuale)
+   
