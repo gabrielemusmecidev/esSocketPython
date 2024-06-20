@@ -1,0 +1,18 @@
+****Facile***
+
+Modificare il codice affinchè indirizzo e porta di server e client non siano di default
+ma che vengano passati come parametro
+
+***Intermedio***
+
+Gestire la chiusura delle connessioni lato server, così da assicurarsi che le connessioni
+siano aperte e chiuse correttamente
+
+Gestire la chiusura del processo lato client, dopo l'invio del messaggio "exit", usando la
+libreria sys 
+
+***Avanzato***
+
+Rimodellare il codice per far si che vengano mandati, anzichè semplici messaggi di testo,
+dei codici bash che vengano eseguiti dal server usando la libreria subprocess
+Suggerimento: il metodo subprocess.run() permette di eseguire un comando passato come argomento
